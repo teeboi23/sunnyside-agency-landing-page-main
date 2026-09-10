@@ -281,9 +281,15 @@ article>div {
   font-weight: 900;
 
 }
-@media (width<= 550px)
+.hamburger{
+  display: none;
+}
+@media (width<= 550px){
   header > nav > ul {
 display: none;
+  }
+  .hamburger{
+    display: block;
   }
   .header-content{
     display: flex;
@@ -320,3 +326,4 @@ display: none;
     .learnmore{
 text-align: center; 
     }
+  }
