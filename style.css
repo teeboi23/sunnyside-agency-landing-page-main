@@ -28,6 +28,7 @@ header > nav > ul {
   text-align: center;
   gap: 20px;
   list-style: none;
+  align-items: center;
 }
 header > nav > ul > li > a {
   text-decoration: none;
