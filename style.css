@@ -3,9 +3,8 @@
   padding: 0;
 }
 body {
-  
 }
-p{
+p {
   font-size: 18px;
   font-weight: 600;
   color: hsl(213, 9%, 39%);
@@ -53,9 +52,8 @@ header > nav > ul > li > a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
- margin: 150px;
- gap: 90px
- 
+  margin: 150px;
+  gap: 90px;
 }
 .header-content > h1 {
   font-family: Fraunces;
@@ -124,17 +122,16 @@ main > div:nth-child(6) {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  
-  .line{
-     background-color: hsl(51, 100%, 49%);
-  }
 
+  .line {
+    background-color: hsl(51, 100%, 49%);
+  }
 }
-.transform>h1{
+.transform > h1 {
   font-size: 2.5rem;
   font-weight: 900;
 }
-.transform>p{
+.transform > p {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 600;
@@ -155,16 +152,15 @@ main > div:nth-child(6) {
   justify-content: center;
   gap: 20px;
 
-  .line{
+  .line {
     background-color: hsl(7, 99%, 70%);
   }
- 
 }
-.stand-out>h1{
+.stand-out > h1 {
   font-size: 2.5rem;
   font-weight: 900;
 }
-.stand-out>p{
+.stand-out > p {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 600;
@@ -240,8 +236,15 @@ article {
   justify-content: center;
   gap: 40px;
   height: 100vh;
-
 }
+
+ .learnmore > a {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    z-index: 20;
+    font-family: Fraunces;
+    font-weight: 900;
+  }
 article > h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -251,7 +254,7 @@ article > h1 {
   font-weight: 900;
   letter-spacing: 10px;
 }
-article>div {
+article > div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,64 +270,81 @@ article>div {
   text-align: center;
   line-height: 1.7;
   gap: 60px;
-  padding:26px;
- 
-
+  padding: 26px;
 }
-.testimonials>img {
+.testimonials > img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-.testimonials>div>h3 {
+.testimonials > div > h3 {
   text-align: center;
   font-family: Fraunces;
   font-weight: 900;
-
 }
-.hamburger{
+.hamburger {
   display: none;
 }
-@media (width<= 550px){
+@media (width<= 550px) {
   header > nav > ul {
-display: none;
+    display: none;
   }
-  .hamburger{
+  .hamburger {
     display: block;
   }
-  .header-content{
+  .header-content {
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 1px;
- 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 1px;
   }
-  .header-content>h1{
+  .header-content > h1 {
     font-size: 50px;
     font-weight: 700;
     padding: 40px;
-     letter-spacing: 6px;
-     text-align: center;
-
+    letter-spacing: 6px;
+    text-align: center;
   }
- main{
+  main {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main > div:nth-child(2) {
+    order: -1;
+  }
+  main > div:nth-child(1) {
+    text-align: center;
+  }
+  .transform {
+    width: 360px;
+    align-items: center;
+  }
+  .stand-out{
+    width: 340px;
+ align-items: center;
+  
+  }
+  section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  section>div{
+    height: 30vh;
+  }
+  article{
+    height: 230vh;
+  }
+  .kyrian{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  article>h1{
+    font-size: 1.5rem;
+    
+  }
+
   
 }
-    main > div:nth-child(2) {
-      order: -1;
-    }
-    main > div:nth-child(1) {
-      
-      text-align: center;
-    }
-    .transform{
-      width: 70%;
-    }
-    .learnmore{
-text-align: center; 
-    }
-  }
