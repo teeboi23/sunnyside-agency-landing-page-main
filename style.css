@@ -13,14 +13,16 @@ header {
   background-image: url(/images/desktop/image-header.jpg);
   background-size: cover;
   background-position: center;
-  border: 1px solid black;
+ 
   height: 100vh;
+ 
 }
 header > nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 40px;
+ 
 }
 header > nav > ul {
   display: flex;
@@ -52,20 +54,20 @@ header > nav > ul > li > a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 150px;
+  margin-top: 150px;
   gap: 90px;
 }
 .header-content > h1 {
   font-family: Fraunces;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 900;
   color: white;
   letter-spacing: 5px;
 }
 main {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
+ 
 }
 main > div {
   height: 80vh;
@@ -128,7 +130,7 @@ main > div:nth-child(6) {
   }
 }
 .transform > h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 .transform > p {
@@ -157,7 +159,7 @@ main > div:nth-child(6) {
   }
 }
 .stand-out > h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 .stand-out > p {
@@ -238,13 +240,13 @@ article {
   height: 100vh;
 }
 
- .learnmore > a {
-    color: hsl(0, 0%, 0%);
-    text-decoration: none;
-    z-index: 20;
-    font-family: Fraunces;
-    font-weight: 900;
-  }
+.learnmore > a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  z-index: 20;
+  font-family: Fraunces;
+  font-weight: 900;
+}
 article > h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -298,12 +300,11 @@ article > div {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    gap: 1px;
+    gap: 50px;
   }
   .header-content > h1 {
     font-size: 50px;
     font-weight: 700;
-    padding: 40px;
     letter-spacing: 6px;
     text-align: center;
   }
@@ -317,34 +318,37 @@ article > div {
   main > div:nth-child(1) {
     text-align: center;
   }
-  .transform {
-    width: 360px;
+  .transform,
+  .stand-out {
+    width: 80%;
     align-items: center;
+    
   }
-  .stand-out{
+  .stand-out {
     width: 340px;
- align-items: center;
-  
+    text-align: center;
   }
-  section{
+  section {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  section>div{
+  section > div {
     height: 30vh;
   }
-  article{
+  article {
     height: 230vh;
+   
   }
-  .kyrian{
+  .kyrian {
     display: flex;
     flex-direction: column;
-    
+   
+    width: 100vw;
   }
-  article>h1{
+  article > h1 {
     font-size: 1.5rem;
-    
   }
-
-  
+  .testimonials {
+   
+  }
 }
